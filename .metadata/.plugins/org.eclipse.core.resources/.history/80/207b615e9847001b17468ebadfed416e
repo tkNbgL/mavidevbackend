@@ -1,0 +1,18 @@
+package com.example.mavidev.dao.mapper;
+
+import com.example.mavidev.dao.model.UserFormDao;
+import com.example.mavidev.model.UserForm;
+
+public class UserFormMapper {
+	public static UserFormDao toUserFormDao(UserForm user) {
+		UserFormDao userFormDao = new UserFormDao(
+					user.getName(),
+					user.getMail(),
+					user.getMessage()
+				);
+		
+		
+		return userFormDao;
+	}
+
+}

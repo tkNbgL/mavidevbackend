@@ -1,0 +1,35 @@
+package com.example.mavidev.dao.mapper;
+
+import com.example.mavidev.dao.model.UserFormDao;
+import com.example.mavidev.model.UserForm;
+
+public class UserFormMapper {
+	public static UserFormDao toUserFormDao(UserForm userForm) {
+		UserFormDao userFormDao = new UserFormDao(
+				userForm.getName(),
+				userForm.getMail(),
+				userForm.getMessage());
+		
+		
+		return userFormDao;
+	}
+	
+	public static UserForm toUserForm(UserFormDao userFormDao) {
+		User user = new User();
+		
+		//user.setUserId(0);
+		user.setEmail(userDao.getEmail());
+		user.setPassword(userDao.getPassword());
+		user.setFirstName(userDao.getFirstName());
+		user.setLastName(userDao.getLastName());
+		user.setMobileNumber(userDao.getMobileNumber());
+		
+		if(userDao.getUserInformationDao() == null)
+			user.setUserInformation(null);
+		else
+			user.setUserInformation(UserInformationMapper.toUserInformation(userDao.getUserInformationDao()));
+		
+		return user;
+	}
+
+}

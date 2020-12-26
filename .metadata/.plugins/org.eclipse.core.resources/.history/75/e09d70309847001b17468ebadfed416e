@@ -1,0 +1,20 @@
+package com.example.mavidev.dao.model;
+
+public class UserFormDao {
+	private int id;
+	private String name;
+	private String mail;
+	private String message;
+	
+	public UserFormDao() {	}
+	
+	public UserFormDao(int id, String name, String mail, String message) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.mail = mail;
+		this.message = message;
+	}
+	
+	
+}

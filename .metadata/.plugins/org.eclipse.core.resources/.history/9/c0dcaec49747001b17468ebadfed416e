@@ -1,0 +1,5 @@
+package com.example.mavidev.dao.model;
+
+public class UserFormDao {
+
+}

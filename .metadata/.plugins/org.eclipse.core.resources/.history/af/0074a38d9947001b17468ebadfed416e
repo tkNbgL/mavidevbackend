@@ -1,0 +1,5 @@
+package com.example.mavidev.repository;
+
+public interface UserFormRepository {
+
+}

@@ -1,0 +1,26 @@
+package com.example.mavidev.model;
+
+public class UserForm {
+	private String name;
+	private String mail;
+	private String message;
+	
+	public UserForm(String name, String mail, String message) {
+		super();
+		this.name = name;
+		this.mail = mail;
+		this.message = message;
+	}
+	
+	public String getName() {
+		return name;
+	}
+	public String getMail() {
+		return mail;
+	}
+	public String getMessage() {
+		return message;
+	}
+	
+	
+}

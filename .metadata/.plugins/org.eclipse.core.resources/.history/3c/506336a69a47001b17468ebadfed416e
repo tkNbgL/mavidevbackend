@@ -1,0 +1,8 @@
+package com.example.mavidev.service;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class FormServiceImpl implements FormService{
+	
+}

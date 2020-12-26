@@ -1,0 +1,23 @@
+package com.example.mavidev.controller;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.example.mavidev.model.UserForm;
+
+@RestController
+@RequestMapping("")
+public class UserFormController {
+
+	@GetMapping("/usersForm")
+	public List<UserForm> retrieveAllUsers(){
+		List<UserForm> userForms = new ArrayList<>();
+		userForms.add(new UserForm("utku", "mail", "asdasdads"));
+		return userForms;
+	}
+	
+}
